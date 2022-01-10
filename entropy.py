@@ -24,7 +24,7 @@ while True:
             else:
                 break
         prob_sum += probability
-    if prob_sum != 1:
+    if prob_sum < 0.99 or prob_sum > 1.01:
         print("Sum of probabilities not equal to 1")
         print("Rerunning script...")
     else:
